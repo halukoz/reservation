@@ -11,11 +11,6 @@ export interface Reservation {
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  reservations: Reservation[] = [
-    {value: 'restaurant-0', viewValue: 'Restaurant'},
-    {value: 'werkstatt-1', viewValue: 'Werkstatt'},
-    {value: 'berber-2', viewValue: 'Berber'}
-  ];
 
   constructor() { }
 

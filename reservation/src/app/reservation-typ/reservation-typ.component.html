@@ -1,0 +1,19 @@
+<mat-card class="reservation-card">
+  <mat-card-header>
+    <mat-card-title>Reservation Typ</mat-card-title>
+    <mat-card-subtitle>Was brauchen Sie?</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+  <mat-form-field>
+  <mat-label>Reservations</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let reservation of reservations" [value]="reservation.value">
+      {{reservation.viewValue}}
+    </mat-option>
+  </mat-select>
+  </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="nextPageOpen()">Weiter</button>
+  </mat-card-actions>
+</mat-card>
